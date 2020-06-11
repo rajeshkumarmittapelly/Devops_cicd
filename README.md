@@ -24,7 +24,7 @@
   Allow user - dockeradmin to acess /opt/docker
    
     chown -R dockeradmin:dockeradmin /opt/docker
-    ```
+ ```
 ```sh
   ## nano Dockerfile
   # Pull base image 
