@@ -14,9 +14,14 @@
   useradd dockeradmin
   passwd dockeradmin
   usermod -aG docker dockeradmin
-```
-
+  ```
+  
 4. Write a Docker file under /opt/docker
+
+   Allow user - dockeradmin to acess /opt/docker
+    ```
+    chown -R dockeradmin:dockeradmin /opt/docker
+    ````````
 
 ```sh
   mkdir /opt/docker
