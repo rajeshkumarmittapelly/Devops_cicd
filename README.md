@@ -18,15 +18,15 @@
   
 4. Write a Docker file under /opt/docker
 
-   Allow user - dockeradmin to acess /opt/docker
+ ```sh
+  mkdir /opt/docker
+  
+  Allow user - dockeradmin to acess /opt/docker
     ```
     chown -R dockeradmin:dockeradmin /opt/docker
     ````````
-
-```sh
-  mkdir /opt/docker
-
-  ### nano Dockerfile
+````sh
+  ## nano Dockerfile
   # Pull base image 
   From tomcat:8-jre8 
 
