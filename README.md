@@ -19,10 +19,10 @@
 4. Write a Docker file under /opt/docker
 
  ```sh
-  mkdir /opt/docker
-  
+   mkdir /opt/docker
+ ``` 
   Allow user - dockeradmin to acess /opt/docker
-   
+ ```sh
     chown -R dockeradmin:dockeradmin /opt/docker
  ```
 ```sh
