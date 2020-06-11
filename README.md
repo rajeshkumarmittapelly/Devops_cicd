@@ -1,4 +1,4 @@
-#  DevOps project with Git, Jenkins and Docker on AWS EC2 | CICD on containers
+#  DevOps project with Git, Jenkins & Docker on AWS EC2 | CICD on containers
 
 
 1. Launch an EC2 instance for Docker host
@@ -52,16 +52,12 @@ C) send files or execute commands over SSH
  Remote directory	: `//opt//docker`  
  Exec command[s]	: 
   ```sh
-  docker stop myapp;
-  docker rm -f myapp;
-  docker image rm -f myapp;
-  cd /opt/docker;
-  docker build -t myapp .
+  docker stop myapp; docker rm -f myapp; docker image rm -f myapp; cd /opt/docker; docker build -t myapp .
   ```
 
 D) send files or execute commands over SSH  
   Name: `docker_host`  
-  Exec command	: `docker run -d --name myapp -p 8090:8080 myapp`  
+  Exec command	: `docker run -d --name myapp -p 80:8080 myapp`  
 
 7. Login to Docker host and check images and containers. (no images and containers)
 
@@ -71,5 +67,5 @@ D) send files or execute commands over SSH
 
 10. Access web application from browser which is running on container
 ```
-<docker_host_Public_IP>:8090
+<docker_host_Public_IP>/webapp
 ```
