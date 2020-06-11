@@ -24,8 +24,8 @@
   Allow user - dockeradmin to acess /opt/docker
     ```
     chown -R dockeradmin:dockeradmin /opt/docker
-    ````````
-````sh
+    ```
+```sh
   ## nano Dockerfile
   # Pull base image 
   From tomcat:8-jre8 
