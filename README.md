@@ -21,7 +21,7 @@
  ```sh
    mkdir /opt/docker
  ``` 
-  Allow user - dockeradmin to acess /opt/docker
+   Allow user - dockeradmin to acess /opt/docker
  ```sh
     chown -R dockeradmin:dockeradmin /opt/docker
  ```
