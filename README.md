@@ -54,9 +54,9 @@
   ```sh
     docker stop myapp; docker rm -f myapp; docker image rm -f myapp; cd /opt/docker; docker build -t myapp .
   ```
-     D) send files or execute commands over SSH  
-     Name: `docker_host`  
-     Exec command	: `docker run -d --name myapp -p 80:8080 myapp`  
+       D) send files or execute commands over SSH  
+       Name: `docker_host`  
+       Exec command	: `docker run -d --name myapp -p 80:8080 myapp`  
 
 7. Login to Docker host and check images and containers. (no images and containers)
 
