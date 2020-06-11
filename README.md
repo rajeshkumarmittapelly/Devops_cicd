@@ -22,7 +22,7 @@
   mkdir /opt/docker
   
   Allow user - dockeradmin to acess /opt/docker
-    ```
+   
     chown -R dockeradmin:dockeradmin /opt/docker
     ```
 ```sh
