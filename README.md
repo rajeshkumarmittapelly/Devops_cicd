@@ -1,4 +1,4 @@
-# DevOps project with Git, Jenkins & Docker on AWS EC2
+# DevOps with Git, Jenkins & Docker on AWS EC2
 
 
 1. Launch an EC2 instance for Docker host
