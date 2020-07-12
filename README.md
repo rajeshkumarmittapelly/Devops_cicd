@@ -3,7 +3,7 @@
 
 1. Launch an EC2 instance for Docker host 
 
-2. Install docker on EC2 instance and start services 
+2. Install docker on EC2 instance & start services  
   ```sh 
     yum install docker
     service docker start
