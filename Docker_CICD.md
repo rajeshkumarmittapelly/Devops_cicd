@@ -64,7 +64,7 @@
   ```
     D) send files or execute commands over SSH  
       Name: `docker_host`  
-      Exec command	: `docker run -d --name myapp -p 80:8080 myapp`  
+      Exec command	: docker run -d --name myapp -p 80:8080 myapp
 
 7. Login to Docker host and check images and containers. (no images and containers)
 
@@ -76,3 +76,19 @@
 ```
     <docker_host_Public_IP>/webapp
 ```
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+If you have user permission issues in EC2 instance while configuring in jenkins publish over ssh.
+
+Go to the path nano /etc/ssh/sshd_config
+
+Comment Out: PasswordAuthentication no
+Uncomment: PasswordAuthentication yes 
+
+example:
+# To disable tunneled clear text passwords, change to no here!
+PasswordAuthentication yes
+#PasswordAuthentication no
+
+Run command to restart sshd : ```service sshd restart```
