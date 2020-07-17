@@ -85,8 +85,7 @@ Go to the path: ```nano /etc/ssh/sshd_config```
 ```
   Comment Out: PasswordAuthentication no
   Uncomment: PasswordAuthentication yes 
- ````
- ```
+
 example:
 
  #To disable tunneled clear text passwords, change to no here!
