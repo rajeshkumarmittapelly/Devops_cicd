@@ -1,5 +1,7 @@
 # DevOps with Git, Jenkins & Docker on AWS EC2
 
+![DevOps CI CD](Devops_CI_Cd.png)
+
 
 1. Launch an EC2 instance for Docker host 
 
