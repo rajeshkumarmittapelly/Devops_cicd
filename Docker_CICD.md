@@ -87,8 +87,8 @@ Go to the path ```nano /etc/ssh/sshd_config```
   Uncomment: PasswordAuthentication yes 
 
 example:
- ``` #To disable tunneled clear text passwords, change to no here!
+ ```#To disable tunneled clear text passwords, change to no here!
   PasswordAuthentication yes
-  #PasswordAuthentication no```
+  #PasswordAuthentication no
 
-Run command to restart sshd : ```service sshd restart```
+Run command to restart sshd : ```service sshd restart
