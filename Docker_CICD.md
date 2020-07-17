@@ -71,7 +71,9 @@
 
 10. Access web application from browser which is running on container
 ```
-    <docker_host_Public_IP>/webapp
+    http://<docker_host_Public_IP>/webapp<br>
+    
+    eg: http://13.36.124.125/webapp
 ```
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
