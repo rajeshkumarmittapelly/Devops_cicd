@@ -27,8 +27,8 @@
     chown -R dockeradmin:dockeradmin /opt/docker
  ```
 
-  Create a file and open it : nano Dockerfile
- 
+  Create a file and open it : `nano Dockerfile`
+``` 
   # Pull base image 
   From tomcat:8-jre8 
 
@@ -80,7 +80,7 @@
 
 If you have user permission issues in EC2 instance while configuring in jenkins publish over ssh.
 
-Go to the path: ```nano /etc/ssh/sshd_config```
+Go to the path: `nano /etc/ssh/sshd_config`
 ```
   Comment Out: PasswordAuthentication no
   Uncomment: PasswordAuthentication yes 
@@ -92,8 +92,4 @@ example:
  #PasswordAuthentication no
  ```
 
-Run command to restart sshd :
-```
-service sshd restart
-
-```
+Run command to restart sshd : `service sshd restart`
