@@ -81,14 +81,15 @@
 
 If you have user permission issues in EC2 instance while configuring in jenkins publish over ssh.
 
-Go to the path ```nano /etc/ssh/sshd_config```
+Go to the path: ```nano /etc/ssh/sshd_config```
 
   Comment Out: PasswordAuthentication no
   Uncomment: PasswordAuthentication yes 
 
 example:
- ```#To disable tunneled clear text passwords, change to no here!
-  PasswordAuthentication yes
-  #PasswordAuthentication no
+ ```
+ #To disable tunneled clear text passwords, change to no here!
+ PasswordAuthentication yes
+ #PasswordAuthentication no```
 
 Run command to restart sshd : ```service sshd restart
