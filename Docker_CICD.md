@@ -19,7 +19,6 @@
   ```
   
 4. Write a Docker file under /opt/docker
-
  ```sh
    mkdir /opt/docker
  ``` 
