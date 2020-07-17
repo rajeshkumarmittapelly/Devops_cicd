@@ -54,9 +54,9 @@
 
     C) send files or execute commands over SSH
      Name: docker_host  
-     Source files	: `webapp/target/*.war`,
-     Remove prefix	: `webapp/target`,
-     Remote directory	: `//opt//docker` , 
+     Source files	: `webapp/target/*.war`<br/>
+     Remove prefix	: `webapp/target`<br/>
+     Remote directory	: `//opt//docker`<br/>
      Exec command[s]	: `docker stop myapp; docker rm -f myapp; docker image rm -f myapp; cd /opt/docker; docker build -t myapp .`
      
    D) send files or execute commands over SSH  
