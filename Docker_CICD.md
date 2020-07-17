@@ -40,30 +40,28 @@
 ```
 
 5. Login to Jenkins console and add Docker server to execute commands from Jenkins  
-    Manage Jenkins --> Configure system -->  Publish over SSH --> add Docker server and credentials
+    `Manage Jenkins --> Configure system -->  Publish over SSH --> add Docker server and credentials`
 
 6. Create Jenkins job 
 
     A) Source Code Management  
-     Repository : https://github.com/mohan-balakrishnan/Devops_cicd.git  
+     Repository : `https://github.com/mohan-balakrishnan/Devops_cicd.git`  
      Branches to build : */master  
 
     B) Build
-     Root POM: pom.xml  
-     Goals and options : clean install package  
+     Root POM: `pom.xml`  
+     Goals and options : `clean install package` 
 
     C) send files or execute commands over SSH
      Name: docker_host  
      Source files	: `webapp/target/*.war`
      Remove prefix	: `webapp/target`
      Remote directory	: `//opt//docker`  
-     Exec command[s]	: 
-  ```sh
-    docker stop myapp; docker rm -f myapp; docker image rm -f myapp; cd /opt/docker; docker build -t myapp .
-  ```
-    D) send files or execute commands over SSH  
-      Name: `docker_host`  
-      Exec command	: docker run -d --name myapp -p 80:8080 myapp
+     Exec command[s]	: `docker stop myapp; docker rm -f myapp; docker image rm -f myapp; cd /opt/docker; docker build -t myapp .`
+     
+   D) send files or execute commands over SSH  
+      Name: `docker_host`
+      Exec command	: `docker run -d --name myapp -p 80:8080 myapp`
 
 7. Login to Docker host and check images and containers. (no images and containers)
 
