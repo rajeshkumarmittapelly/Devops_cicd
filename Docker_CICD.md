@@ -26,9 +26,9 @@
  ```sh
     chown -R dockeradmin:dockeradmin /opt/docker
  ```
-```sh
-  ## nano Dockerfile
-  
+
+  Create a file and open it : nano Dockerfile
+ 
   # Pull base image 
   From tomcat:8-jre8 
 
