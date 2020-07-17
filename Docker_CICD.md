@@ -95,5 +95,7 @@ example:
  ```
 
 Run command to restart sshd :
-```service sshd restart
+```
+service sshd restart
+
 ```
